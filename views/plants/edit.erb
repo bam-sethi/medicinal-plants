@@ -1,0 +1,14 @@
+<h2>Edit Plant</h2>
+
+<form action='/plants/<%= "#{@plant.id}" %>' method="post">
+  <label for="plant[name]">Name:</label>
+  <input name="plant[name]" value='<%= "#{@plant.name}" %>'>
+
+  <label for="plant[photo_url]">Photo URL:</label>
+  <input name="plant[photo_url]" value='<%= "#{@plant.photo_url}" %>'>
+
+  <label for="plant[properties]">properties:</label>
+  <input name="plant[properties]" value='<%= "#{@plant.properties}" %>'>
+
+  <input type="submit" value="Create">
+</form>
